@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "Undertale",
+  "short_name": "Undertale",
+  "description": "Play Undertale from the the-oblyv launcher.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "./unnamed.webp",
+      "sizes": "240x240",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}

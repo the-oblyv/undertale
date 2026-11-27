@@ -6,6 +6,14 @@ const gameIframe = document.getElementById('game-iframe');
 const launcher = document.getElementById('launcher');
 const exitBtn = document.getElementById('exit-btn');
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch((error) => {
+      console.error('Service worker registration failed:', error);
+    });
+  });
+}
+
 (function drawExitButton() {
   const canvas = document.getElementById('exit-canvas');
   const ctx = canvas.getContext('2d');
